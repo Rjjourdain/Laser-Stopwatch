@@ -74,13 +74,13 @@ File dataFile = SD.open("SDTEST1.txt", FILE_WRITE);
   Serial.print("Analog A reading = ");
   Serial.println(photocellAReading);
 
-
   dataFile.print("Analog A reading = ");
   dataFile.println(photocellAReading);
 
-  Serial.print("Analog reading B= ");
+  Serial.print("Analog B reading = ");
   Serial.println(photocellBReading);
-  dataFile.print("Analog A reading = ");
+  
+  dataFile.print("Analog B reading = ");
   dataFile.println(photocellBReading);
 
   if (photocellAReading < 650 && photocellBReading > 650 ) {

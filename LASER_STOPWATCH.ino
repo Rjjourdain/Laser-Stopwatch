@@ -8,7 +8,6 @@ int photocellBReading; //record the photocell's value
 
 const int chipSelect = 10;  //attach sd
 
-
 void setup () {
   Serial.begin (9600);//start communication with the serial port
   Serial.print("Initializing SD card...");
